@@ -35,7 +35,7 @@ module.exports = {
       ref  : "origin/master",
       repo : "https://github.com/noahjohn9259/nodejs-deployment.git",
       path : "~/node-example",
-      "post-deploy" : "nvm install && npm install && ~/.nvm/versions/node/v6.9.1/bin/pm2 startOrRestart ecosystem.config.json --env production"
+      "post-deploy" : "nvm install && npm install && ~/.nvm/versions/node/v6.9.1/bin/pm2 startOrRestart ecosystem.config.js --env production"
     }
   }
 }
