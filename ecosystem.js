@@ -7,7 +7,7 @@ module.exports = {
 
     // First application
     {
-      name      : "API",
+      name      : "app",
       script    : "app.js",
       // env: {
       //   COMMON_VARIABLE: "true"
@@ -35,7 +35,7 @@ module.exports = {
       ref  : "origin/master",
       repo : "https://github.com/noahjohn9259/nodejs-deployment.git",
       path : "~/node-example",
-      "post-deploy" : "nvm install && npm install && pm2 startOrRestart ecosystem.json --env production"
+      "post-deploy" : "nvm install && npm install && ~/.nvm/versions/node/v6.9.1/bin/pm2 startOrRestart ecosystem.json --env production"
     }
   }
 }

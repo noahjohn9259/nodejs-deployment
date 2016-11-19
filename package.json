@@ -2,7 +2,7 @@
   "name": "nodejs-test",
   "version": "1.0.0",
   "description": "",
-  "main": "ecosystem.config.js",
+  "main": "ecosystem.js",
   "dependencies": {
     "express": "^4.14.0",
     "pm2": "^2.1.5"
