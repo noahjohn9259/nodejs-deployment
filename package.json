@@ -24,6 +24,7 @@
     "nodemon": "^1.11.0"
   },
   "scripts": {
+    "bootstrap": "knex migrate:latest && knex seed:run",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
