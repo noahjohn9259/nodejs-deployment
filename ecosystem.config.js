@@ -34,7 +34,7 @@ module.exports = {
       host : "107.170.197.133",
       ref  : "origin/master",
       repo : "https://github.com/noahjohn9259/nodejs-deployment.git",
-      path : "D:\\xampp\\htdocs\\projects\\NOAH JOHN UCAB, LLC\\sites\\Nodejs\\nodejs-test",
+      path : "~/node-example",
       "post-deploy" : "nvm install && npm install && pm2 startOrRestart ecosystem.json --env production"
     }
   }
