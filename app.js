@@ -24,6 +24,14 @@ express()
   .use(passport.session())
   .use(authRoutes)
   .use(postsRoutes)
+
+  // .get('/', (req, res, next) => {
+  //   res.send({
+  //     session: req.session,
+  //     user: req.user,
+  //     authenticated: req.isAuthenticated()
+  //   })
+  // })
   .get("/", cache.route({expire: 200, prefix: "home"}),  (req, res, next) => {
 
     // setTimeout(() => {
